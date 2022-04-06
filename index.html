@@ -15,7 +15,18 @@
     <div class="border-article"></div>
     <header>
         <div class="background-header"></div>
-            
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                <li class="nav-item"><a href="#example" class="nav-link">Example</a></li>            
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              </ul>
+        </nav>
+        <div class="profile"> 
             <div class="photo-container">
                 <img class="photo" src="images/photo.jpg" alt="My photo">
             </div>
@@ -23,11 +34,11 @@
                 <h1>Natalia <br />Akulich</h1>
                 <h2>Junior Frontend Developer</h2>
             </section>
-        
+        </div>   
     </header>
     <main>
         <div class="left-main">
-            <article class="education">
+            <article id="education" class="education">
                 <h2>Education</h2>
                 <ul>
                     <li>
@@ -44,7 +55,7 @@
                     </li>
                 </ul>
             </article>
-            <article>
+            <article id="skills">
                 <h2 style="margin-bottom: 25px;">Skills</h2>
                 <div class="skills">
                     <p>HTML</p>
@@ -107,7 +118,7 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article id="languages">
                 <h2>Languages</h2>
                 <div class="languages">
                     <div class="russian">
@@ -125,7 +136,7 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article id="contacts">
                 <h2>Contacts</h2>
                 <div class="contacts">
                     <img class="img-contacts" src="images/phone.png" alt="phone">
@@ -146,13 +157,13 @@
             </article>
         </div>
         <div class="right-main">
-            <article class="about">
+            <article id="summary" class="about">
                 <h2>About me</h2>
                 <p>Four year ago I wanted to work in EPAM. I studied CSS, HTML, JS myself on the FeeCodeCamp, but my English level was A2. Then I worked in the small company, where I learned React+Redux and React Native myself and created app for cargo transportation in React Native.</p> 
                 <p>After this experience I had to take a break due to the birth of my lovely children. In this time I improved my English skills and I was able to pass the IELTS for B1 level. </p>
                 <p>All time I was dreaming to work in EPAM, where I can creat amazing applications, because I like find solutions to various problems. Also in this company I would develop different hard and skills, such as communication, team work and learn new technologies. I like create complex and useful application, because it can help many people.</p>
             </article>
-            <article class="experience">
+            <article id="experience" class="experience">
                 <h2>Experience</h2>
                 <ul>
                     <li><a href="https://akulichnv.github.io/Portfolio/">My portfolio (2017)</a></li>
@@ -160,7 +171,7 @@
                     <li>App in React Native (2018)</li>
                 </ul>
             </article>
-            <article>
+            <article id="example">
                 <h2>Code Example</h2>
                 <p><b>Create Phone Number from CODEWARS</b></p>
                 <p><i>Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number. <b>Example:</b></i></p>
