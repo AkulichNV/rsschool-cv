@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth; 
+  }
 h1 {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 50px;
@@ -13,10 +16,11 @@ li, p, span {
 a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s;
 }
 a:hover {
     text-decoration: none;
-    color: orange; 
+    color: #A08346; 
 }
 body{
     max-width: 1024px;
@@ -31,6 +35,33 @@ body{
     flex-wrap: wrap;
 }
 header {
+    width: 100%;
+}
+.nav {
+    margin-left: auto;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    margin-top: 20px;
+    gap: 30px;
+    margin-left: 10px;    
+  }
+  .nav-link {
+    line-height: 50px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .nav-link:hover {
+    color: #A08346;
+  }
+
+.profile {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -39,7 +70,7 @@ header {
 .background-header { 
     background-color: #f6ecd7;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 50px;
     z-index: -2;
     position: absolute; 
@@ -52,7 +83,7 @@ header {
     border-left: 1px solid grey;
     left: 50%;
     right: 0;
-    top: 25px;
+    top: 85px;
     bottom: 0;
     z-index: -1;
 }
@@ -101,7 +132,7 @@ main {
 .circle-full {
     width: 20px;
     height: 20px;
-    background: black;
+    background: #9398A6;
     -moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
@@ -141,7 +172,7 @@ main {
     -moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-    background: green;
+    background: #9398A6;
 }
 .russian-in {
     width: 70px;
@@ -167,9 +198,9 @@ main {
 .half-circle {
     width: 100px;
     height: 50px;
-    border: 1px solid orange;
+    border: 1px solid #9398A6;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    background: orange;
+    background: #9398A6;
 }
 .english-in {
     width: 70px;
